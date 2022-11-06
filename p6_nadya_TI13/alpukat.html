@@ -11,7 +11,7 @@
         }
 
         h1 {
-            color: green;
+            color: blueviolet;
             text-align: center;
         }
 
@@ -66,6 +66,29 @@
         #tombol {
             text-align: center;
         }
+
+        .fungsi{
+            background-color: goldenrod;
+            border: 6px;
+            color: white;
+            padding: 40px;
+            list-style-type: square;
+            font-family: cursive; 
+        }
+
+        table{
+            text-align: center;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        td{
+            text-align: left
+        }
+
+        th{
+            text-align: left
+        }
     </style>
 </head>
 
@@ -106,19 +129,22 @@
         Selain itu terdapat juga berbagai macam vitamin seperti E, K, B5 dan B6.</p>
     <p>
     <h3>Berikut khasiat buah Alpukat:</h3>
-    <ol>
-        <li>Vitamin E, Memiliki anti aging yang bisa mendorong
-            perawatan kulit alamai
+    <ol class="fungsi">
+        <li><b>Vitamin E</b></li>
+        <p>Memiliki 
+            <i><b>anti aging</b></i>
+             yang bisa mendorong
+            perawatan kulit alami</p>
+        <li><b>Vitamin K</b>
         </li>
-        <li>Vitamin K, Membantu mencegah terjadinya osteoporosis</li>
-        <li>Viitamin B5, Membantu menurunkan tingkat stress, meringankan rasa sakit</li>
-        <li>Vitamin B6, Membantu treat diabetes, pendarahan menstruasi,
-            insomnia
+        <p>Membantu <i><b>mencegah</b></i> terjadinya osteoporosis</p>
+        <li><b>Vitamin B5</b>
         </li>
+        <p>Membantu <i><b>menurunkan</b></i> tingkat stress, meringankan rasa sakit</p>
+        <li><b>Vitamin B6</b><br>Membantu <i><b>treat diabetes,</b></i> pendarahan menstruasi,
+            insomnia</li>
     </ol>
     </p>
-
-
     <div class="foto">
         <img src="images/alpukat_miki.png" alt="alpukat miki" />
         <img src="images/alpukat_mentega.png" alt="alpukat mentega" />
@@ -135,6 +161,44 @@
             Gimana? Tertarik !
         </h3>
     </div>
+    <table border="1" width="50%">
+        <tr bgcolor="blue">
+            <th><b>No</b></th>
+            <th>Jenis Alpukat</th>
+            <th>Harga 1 Kg</th>
+            <th>Harga 2 Kg</th>
+            <th>Harga 3 Kg</th>
+        </tr>
+        <tr bgcolor="aqua">
+            <td><b>1</b></td>
+            <td>Alpukat Mentega</td>
+            <td>Rp. 35.000,-</td>
+            <td>Rp. 65.000,-</td>
+            <td>Rp. 95.000,-</td>
+        </tr>
+        <tr bgcolor="white">
+            <td><b>2</b></td>
+            <td>Alpukat Miki</td>
+            <td>Rp. 50.000,-</td>
+            <td>Rp. 90.000,-</td>
+            <td>Rp. 135.000,-</td>
+        </tr>
+        <tr bgcolor="Aqua">   
+            <td><b>3</b></td>
+            <td>Alpukat Aligator</td>
+            <td>Rp. 30.000,-</td>
+            <td>Rp. 55.000,-</td>
+            <td>Rp. 80.000,-</td>
+        </tr>
+        <tr bgcolor="white">
+            <td><b>4</b></td>
+            <td>Alpukat Kendil</td>
+            <td>Rp. 40.000,-</td>
+            <td>Rp. 75.000,-</td>
+            <td>Rp. 100.000,-</td>
+        </tr>
+    </table>
+    </br>
     <div class="cod">
         <p>
             PEMBAYARAN DI TEMPAT / COD <br />hanya untuk Jakarta, Bekasi dan Depok
@@ -144,8 +208,6 @@
     <div id="tombol">
         <button>PESAN SEKARANG</button>
     </div>
-
-
 </body>
 
 </html>
