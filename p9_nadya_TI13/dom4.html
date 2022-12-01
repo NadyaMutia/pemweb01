@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratikum 9.4</title>
+</head>
+<body>
+    <h2>Jumlah Dua Bilangan</h2>
+    <form>
+        Angka Pertama : <br>
+        <input type="text" id="satu" onkeyup="OnChange(this.value)"></br>
+        +</br>
+        Angka Kedua : <br>
+        <input type="text" id="dua" onkeyup="OnChange(this.value)"></br>
+        =</br>
+        Hasil: <input type="number" id="hasil">
+    </form>
+
+    <script>
+        function OnChange(value){
+            let angka_satu = document.getElementById("satu").value;
+            let angka_dua = document.getElementById("dua").value;
+            let total = parseInt(angka_satu) + parseInt(angka_dua);
+
+            document.getElementById("hasil").value = total;
+        }
+    </script>
+</body>
+</html>
