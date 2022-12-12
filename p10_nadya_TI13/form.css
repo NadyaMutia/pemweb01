@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    outline: none;
+}
+
+body {
+    background-image: linear-gradient(to left top, #FFF6B7, #F6416C );
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 425px;
+    height: auto;
+    background: white;
+    padding: 35px 50px;
+    border-radius: 5px;
+}
+
+.form .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form .input_data label {
+    display: block;  
+    margin-bottom: 5px;
+}
+
+.form .input_data input {
+    padding: 15px;
+    width: 90%;
+    border: 1px solid transparent;
+    font-size: 16px;
+    border-radius: 3px; 
+}
+
+.form .input_data .input {
+    background: gainsboro;
+    padding-right: 35px;
+}
+
+.form .input_data .input:focus {
+    border-color: pink;
+}
+
+.forn .input_data .input_jawab {
+    position: relative;
+}
+
+.form .input_data .error_msg {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #e02424;
+
+    
+}
+
+.form .input_data .vld {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+    background: green;
+    cursor: pointer;
+}
+
+
+
+
