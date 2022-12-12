@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="form.css">
+    <script>
+        function validation() {
+            let inp_nama = document.getElementById("username").value;
+            let inp_email = document.getElementById("email").value;
+            let inp_jam = document.getElementById("jam").value;
+            let inp_tujuan = document.getElementById("tujuan").value;
+            let inp_tiket = document.getElementById("tiket").value;
+            let form = document.getElementById("form")
+
+            if(inp_nama == "Nadya Mutia Safira" && inp_email == "maubilang143@gmail.com" && inp_jam == "19.45" && inp_tujuan == "Swiss" && inp_tiket == "2") {
+                form.setAttribute("action","dashboard.html")
+                alert("Submit berhasil")}
+            else{
+                alert("Submit gagal")
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="wrapper" style="margin-top: 50px;">
+        <div class="form">
+        <div class="title">
+            Form Validation
+        </div>
+        <br>
+        <br>
+        <form onsubmit="validation()" id="form">
+            <div class="input_data">
+                <label for="username">Nama <span style="padding-left: 110px; color: gray; font-size: smaller;">
+                    Masukan nama anda, maksimum 30 karakter</span></label>
+                <div class="input_jawab">
+                    <input type="text" class="input" id="username">
+                </div>
+                <div class="input_data">
+                    <span id="error_msg" style="color: red;">
+                        Nama tidak valid, silahkan ulangi kembali*
+                    </span>
+                </div>
+            </div>
+            <br/>
+            <div class="input_data">
+                <label for="email">Email<span style="padding-left: 250px; color: grey; font-size: smaller;">
+                    Masukan email anda</span></label>
+                <div class="input_jawab">
+                    <input type="email" class="input" id="email">
+                </div>
+                <div class="input_data">
+                    <span id="error_msg" style="color: red;">
+                        Email tidak tersedia, silahkan ulangi kembali*
+                    </span>
+                </div>
+            </div>
+            <br/>
+            <div class="input_data">
+                <label for="Jam">Jam Keberangkatan<span style="padding-left: 180px; color: gray; font-size: smaller;">
+                    (00.00 - 23.59)</span></label>
+                <div class="input_jawab">
+                    <input type="text" class="input" id="jam">
+                </div>
+                <div class="input_data">
+                    <span id="error_msg" style="color: red;">
+                        Jam keberangkatan tidak ada dalam jadwal, silahkan diperiksa & ulangi kembali*
+                    </span>
+                </div>
+            </div>
+            <br/>
+            <div class="input_data">
+                <label for="Tujuan">Tujuan Keberangkatan<span style="padding-left: 125px; color: grey; font-size: smaller;">
+                    Masukan tujuan anda</span></label>
+                <div class="input_jawab">
+                    <input type="text" class="input" id="tujuan">
+                </div>
+                <div class="input_data">
+                    <span id="error_msg" style="color: red;">
+                        Tujuan keberangkatan tidak ada dalam jadwal, silahkan diperiksa & ulangi kembali*
+                    </span>
+                </div>
+            </div>
+            <br/>
+            <div class="input_data">
+                <label for="Tiket">Jumlah Tiket<span style="padding-left: 280px; color: grey; font-size: smaller;">
+                    (1-10)</span></label>
+                <div class="input_jawab">
+                    <input type="text" class="input" id="tiket">
+                </div>
+                <div class="input_data">
+                    <span id="error_msg" style="color: red;">
+                        Jumlah tiket tidak valid, silahkan diperiksa & ulangi kembali*
+                    </span>
+                </div>
+            </div>
+            <br/>
+            <div class="input_data">
+                <input type="submit" value="Submit" class="vld" id="form_vld">
+            </div>
+        </form>
+    </div>
+    <div class="wrapper" style="margin-left: 40px;">
+        <div class="form">
+        <p>Data Valid</p>
+        <br>
+        <p>Nama : Nadya Mutia Safira</p>
+        <br>
+        <p>Email : maubilang143@gmail.com</p>
+        <br>
+        <p>Jam Keberangkatan : 19.45</p>
+        <br>
+        <p>Tujuan Keberangkatan : Swiss</p>
+        <br>
+        <p>Jumlah Tiket : 2</p>
+        </div>
+    </div>
+    
+</body>
+</html>
