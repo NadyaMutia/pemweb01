@@ -1,0 +1,98 @@
+body {
+    background-color: wheat;
+}
+#header{
+	background-color: tan;
+	margin: 0 auto;
+	height: 130px;
+	padding: 25px;
+} 
+h1{
+	color: blue;
+	text-align: center;
+	font-weight: bold;
+	font-size: 33px;
+	font-family: consolas;
+}
+blockquote{
+	text-align: center;
+	font-weight: bold;
+	border top: 2px dashed;
+	background-color: gold;
+	width: 53%;
+	margin: 0 auto;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+.ul{
+	text-align: center;
+}
+
+.link{
+	display: inline-flex;
+	list-style-type: none;
+	text-align: center;
+	font-size: 20px
+}
+
+.gambar{
+	display: flex;
+	margin-left: 400px;
+}
+
+.gambar img{
+	padding-right: 10px;
+	width: 25%;
+}
+
+.jawa {
+    display: inline;
+    font-size: 80px;
+    color: blue;
+}
+
+.isi{
+	text-align: left;
+	width: fit-content;
+	line-height: 20px;
+	font-size: 20px;
+}
+
+#profil{
+	text-align: left;
+	font-size: 18px;
+}
+
+#beternak{
+	text-align: left;
+	font-size: 20px;
+}
+
+.koleksi{
+	display: flex;
+    background-color: white;
+}
+
+.koleksi img{
+	width: 25%;
+}
+
+.promo{
+	background-color: white;
+	text-align: center;
+    color: red;
+    display: block;
+    text-align: ;
+    margin: 0 auto;
+}
+
+.bawah{
+	list-style-type: none;
+	text-align: center;
+	font-size: 20px
+}
+
+
+
+

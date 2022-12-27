@@ -1,0 +1,45 @@
+#container{
+	display: flex;
+}
+
+.logo{
+	width: 400px;
+	height: 100px;
+	background-color: yellow;
+	margin: 10px;
+}
+
+.navigation{
+	width: 1800px;
+	height: 100px;
+	background-color: red;
+	margin: 10px;
+}
+
+.konten1{
+	width: 385px;
+	height: 500px;
+	background-color: limegreen;
+	margin: 10px;
+}
+
+.konten2{
+	width: 1400px;
+	height: 500px;
+	background-color: grey;
+	margin: 10px;
+}
+
+.konten3{
+	width: 300px;
+	height: 500px;
+	background-color: blue;
+	margin: 10px;
+}
+
+.footer{
+	width: 1313px;
+	height: 100px;
+	background-color: darkblue;
+	margin: 10px;
+}
