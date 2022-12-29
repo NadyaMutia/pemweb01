@@ -8,6 +8,43 @@
     <link 
     rel="stylesheet" 
     href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        .gambar{
+            width: 90px;
+            height: 100px;
+        }
+
+        .text{
+            font-weight: 900;
+            text-shadow: 1px;
+        }
+        .header{
+            height: 500px;
+        }
+
+        .wrapper {
+            min-height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            width: 425px;
+            height: auto;
+            background: white;
+            padding: 35px 50px;
+            border-radius: 5px;
+        }
+
+        .button{
+            margin-left: 125px;
+        }
+
+        .footer{
+            height: 300px;
+        }
+    </style>
 </head>
 <body>
     <div class="container-fluid">
@@ -17,14 +54,11 @@
                      
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="navbar-toggler-icon"></span>
-                    </button> <a class="navbar-brand" href="#">Brand</a>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    </button> <a class="navbar-brand" href="#">Home</a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-left: 665px;">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
                                  <a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                 <a class="nav-link" href="#">Link</a>
                             </li>
                             <li class="nav-item dropdown">
                                  <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>
@@ -41,19 +75,7 @@
                                 Search
                             </button>
                         </form>
-                        <ul class="navbar-nav ml-md-auto">
-                            <li class="nav-item active">
-                                 <a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                                     <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
-                                    <div class="dropdown-divider">
-                                    </div> <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                            </li>
-                        </ul>
+                        
                     </div>
                 </nav>
                 <div class="carousel slide" id="carousel-154585">
@@ -67,35 +89,35 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" alt="Carousel Bootstrap First" src="https://www.layoutit.com/img/sports-q-c-1600-500-1.jpg" />
-                            <div class="carousel-caption">
+                            <img class="d-block w-100 header" alt="Carousel Bootstrap First" src="asset/library.jpg" />
+                            <div class="carousel-caption text">
                                 <h4>
-                                    First Thumbnail label
+                                    Public Library
                                 </h4>
                                 <p>
-                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    Let's go, come to the library and increase your knowledge!                             
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-block w-100 header" alt="Carousel Bootstrap Second" src="asset/b2.jpg" />
+                            <div class="carousel-caption text">
+                                <h4>
+                                    Why do we have to read books?
+                                </h4>
+                                <p>
+                                    Because book is the window of the world!
                                 </p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" alt="Carousel Bootstrap Second" src="https://www.layoutit.com/img/sports-q-c-1600-500-2.jpg" />
-                            <div class="carousel-caption">
+                            <img class="d-block w-100 header" alt="Carousel Bootstrap Third" src="asset/b3.jfif">
+                            <div class="carousel-caption text-dark bg-light">
                                 <h4>
-                                    Second Thumbnail label
+                                    There is no friend as loyal as a book
                                 </h4>
                                 <p>
-                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" alt="Carousel Bootstrap Third" src="https://www.layoutit.com/img/sports-q-c-1600-500-3.jpg" />
-                            <div class="carousel-caption">
-                                <h4>
-                                    Third Thumbnail label
-                                </h4>
-                                <p>
-                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    - Ernest Hemingway
                                 </p>
                             </div>
                         </div>
@@ -103,231 +125,285 @@
                 </div>
             </div>
         </div>
+        <br>
+        <br>
         <div class="row">
             <div class="col-md-4">
-                <div class="jumbotron">
+                <div class="jumbotron bg-info">
                     <h2>
-                        Hello, world!
+                        Hello, Book lovers!
                     </h2>
-                    <p>
-                        This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-                    </p>
+                    <p class="text-light">
+                        You want to find the book you want in the Public Library? Please click the button below for search step information!
                     <p>
                         <a class="btn btn-primary btn-large" href="#">Learn more</a>
                     </p>
                 </div>
+                <br>
                 <blockquote class="blockquote">
                     <p class="mb-0">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                        “A room without books is like a body without a soul.”
                     </p>
                     <footer class="blockquote-footer">
-                        Someone famous in <cite>Source Title</cite>
+                        Marcus Tullius Cicero
                     </footer>
                 </blockquote>
+                <br> <br>
+                <h6>Recommendation Books!</h6>
+                <br>
                 <div class="media">
-                    <img class="mr-3" alt="Bootstrap Media Preview" src="https://www.layoutit.com/img/sports-q-c-64-64-8.jpg" />
+                    <img class="mr-3 gambar" alt="Book Atomic Habits" src="asset/Atomic Habits.jpg" />
                     <div class="media-body">
                         <h5 class="mt-0">
-                            Nested media heading
-                        </h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                        <div class="media mt-3">
-                             <a class="pr-3" href="#"><img alt="Bootstrap Media Another Preview" src="https://www.layoutit.com/img/sports-q-c-64-64-2.jpg" /></a>
-                            <div class="media-body">
-                                <h5 class="mt-0">
-                                    Nested media heading
-                                </h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                            </div>
-                        </div>
+                            Atomic Habits
+                        </h5> The book Atomic Habits is a book about how to change our habits for the better and of course become permanent changes. James Clear teaches us to achieve our long term goals through small habits that we do every day.
+                    </div>
+                </div>
+                <br>
+                <div class="media">
+                    <img class="mr-3 gambar" alt="Book Atomic Habits" src="asset/think and grow.webp" />
+                    <div class="media-body">
+                        <h5 class="mt-0">
+                            Think and Grow Rich
+                        </h5> Think and Grow Rich (1937) is a classic book containing recipes for success adapted from the experiences of more than 500 people in America who have succeeded in achieving abundant wealth despite starting their lives from "zero point".
                     </div>
                 </div>
             </div>
+            <br><br><br>
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="page-header">
                             <h1>
-                                LayoutIt! <small>Interface Builder for Bootstrap</small>
+                                Public Library! <small>10 Recently Published Books</small>
                             </h1>
                         </div>
+                        <br>
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th>
-                                        #
+                                        No
                                     </th>
                                     <th>
-                                        Product
+                                        Book
                                     </th>
                                     <th>
-                                        Payment Taken
+                                        Published
                                     </th>
                                     <th>
-                                        Status
+                                        Author
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr class="table-primary">
                                     <td>
                                         1
                                     </td>
                                     <td>
-                                        TB - Monthly
+                                        The Dragon's Promise
                                     </td>
                                     <td>
-                                        01/04/2012
+                                        30/08/2022
                                     </td>
                                     <td>
-                                        Default
-                                    </td>
-                                </tr>
-                                <tr class="table-active">
-                                    <td>
-                                        1
-                                    </td>
-                                    <td>
-                                        TB - Monthly
-                                    </td>
-                                    <td>
-                                        01/04/2012
-                                    </td>
-                                    <td>
-                                        Approved
-                                    </td>
-                                </tr>
-                                <tr class="table-success">
-                                    <td>
-                                        2
-                                    </td>
-                                    <td>
-                                        TB - Monthly
-                                    </td>
-                                    <td>
-                                        02/04/2012
-                                    </td>
-                                    <td>
-                                        Declined
-                                    </td>
-                                </tr>
-                                <tr class="table-warning">
-                                    <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        TB - Monthly
-                                    </td>
-                                    <td>
-                                        03/04/2012
-                                    </td>
-                                    <td>
-                                        Pending
+                                        Elizabeth Lim
                                     </td>
                                 </tr>
                                 <tr class="table-danger">
                                     <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        Kaikeyi
+                                    </td>
+                                    <td>
+                                        26/04/2022
+                                    </td>
+                                    <td>
+                                        Vaishnavi Patel
+                                    </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>
+                                        A Magic Steeped in Poison
+                                    </td>
+                                    <td>
+                                        29/03/2022
+                                    </td>
+                                    <td>
+                                        Judy I. Lin
+                                    </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>
                                         4
                                     </td>
                                     <td>
-                                        TB - Monthly
+                                        Never Cross a Highlander
                                     </td>
                                     <td>
-                                        04/04/2012
+                                        27/12/2012
                                     </td>
                                     <td>
-                                        Call in to confirm
+                                        Lisa Rayne
+                                    </td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>
+                                        5
+                                    </td>
+                                    <td>
+                                        The Heretic Royal
+                                    </td>
+                                    <td>
+                                        27/12/2012
+                                    </td>
+                                    <td>
+                                        G.A. Aiken
+                                    </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>
+                                        6
+                                    </td>
+                                    <td>
+                                        The Heretic Royal
+                                    </td>
+                                    <td>
+                                        27/12/2012
+                                    </td>
+                                    <td>
+                                        G.A. Aiken
+                                    </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>
+                                        7
+                                    </td>
+                                    <td>
+                                        The Heretic Royal
+                                    </td>
+                                    <td>
+                                        27/12/2012
+                                    </td>
+                                    <td>
+                                        G.A. Aiken
+                                    </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>
+                                        8
+                                    </td>
+                                    <td>
+                                        The Heretic Royal
+                                    </td>
+                                    <td>
+                                        27/12/2012
+                                    </td>
+                                    <td>
+                                        G.A. Aiken
+                                    </td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>
+                                        9
+                                    </td>
+                                    <td>
+                                        The Heretic Royal
+                                    </td>
+                                    <td>
+                                        27/12/2012
+                                    </td>
+                                    <td>
+                                        G.A. Aiken
+                                    </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>
+                                        10
+                                    </td>
+                                    <td>
+                                        The Heretic Royal
+                                    </td>
+                                    <td>
+                                        27/12/2012
+                                    </td>
+                                    <td>
+                                        G.A. Aiken
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+                        <br><br>
                         <h2>
-                            Heading
+                            The Most Read Books in The Public Library
                         </h2>
                         <p>
-                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+
                         </p>
                         <p>
                             <a class="btn" href="#">View details »</a>
                         </p>
                         <div class="row">
-                            <div class="col-md-4">
-                                <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+                            <div class="col-md-4 gambar">
+                                <img alt="The alchemist" src="asset/the alchemist.jfif" />
                             </div>
-                            <div class="col-md-4">
-                                <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+                            <div class="col-md-4 gambar">
+                                <img alt="The alchemist" src="asset/psychology of money1.jpg" />
                             </div>
-                            <div class="col-md-4">
-                                <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+                            <div class="col-md-4 gambar">
+                                <img alt="The alchemist" src="asset/persepolis1.jpg" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="tabbable" id="tabs-976096">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#tab1" data-toggle="tab">Section 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#tab2" data-toggle="tab">Section 2</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="panel-595603">
-                            <p>
-                                I'm in Section 1.
-                            </p>
-                        </div>
-                        <div class="tab-pane" id="tab2">
-                            <p>
-                                Howdy, I'm in Section 2.
-                            </p>
-                        </div>
-                    </div>
+        <br><br>
+        <hr>
+        <div class="wrapper">
+            <div class="form">
+            <h2 class="text-center text-monospace">
+                Public Library Member
+            </h2>
+            <br><br>
+            <form role="form" class="justify-content-lg-center">
+                <div class="form-group text-center">
+                    <label for="exampleInputEmail1">
+                     Email address
+                    </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" />
                 </div>
-                <form role="form">
-                    <div class="form-group">
-                         
-                        <label for="exampleInputEmail1">
-                            Email address
-                        </label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" />
-                    </div>
-                    <div class="form-group">
-                         
-                        <label for="exampleInputPassword1">
-                            Password
-                        </label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" />
-                    </div>
-                    <div class="form-group">
-                         
-                        <label for="exampleInputFile">
-                            File input
-                        </label>
-                        <input type="file" class="form-control-file" id="exampleInputFile" />
-                        <p class="help-block">
-                            Example block-level help text here.
-                        </p>
-                    </div>
-                    <div class="checkbox">
-                         
-                        <label>
-                            <input type="checkbox" /> Check me out
-                        </label>
-                    </div> 
-                    <button type="submit" class="btn btn-primary">
-                        Submit
-                    </button>
-                </form> 
-                <address>
-                     <strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890
-                </address>
+
+                <div class="form-group text-center">
+                    <label for="exampleInputPassword1">
+                    Password
+                    </label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" />
+                </div>
+                <button type="submit" class="btn btn-primary button">
+                    Submit
+                </button>
+            </form> 
             </div>
         </div>
-    </div>
+
+        <div class="container-fluid text-dark mt-5 py-5 wow fadeIn footer bg-primary" data-wow-delay="0.1s" id="footer">
+            <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                <h4 class="text-black mb-4">Contact US</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bryant Park, 476 5th Ave, New York</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(123) 456-7890</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>publiclibrary.ac.id</p>
+                       
+            </div>
+        </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
